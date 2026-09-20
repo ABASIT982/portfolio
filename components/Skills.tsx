@@ -68,35 +68,35 @@ export function Skills() {
         </div>
 
         {/* ----- Skills Grid ----- */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {skillCategories.map((category) => {
             const Icon = category.icon;
             return (
               <div
                 key={category.title}
-                className="p-6 rounded-lg border border-border bg-background hover:border-primary/40 transition-colors"
+                className="p-5 rounded-lg border border-border bg-background"
               >
                 {/* ----- Category Header ----- */}
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-md bg-primary/10 shrink-0">
-                    <Icon className="h-5 w-5 text-primary" />
+                  <div className="flex items-center justify-center w-10 h-10 rounded-md bg-secondary shrink-0">
+                    <Icon className="h-5 w-5 text-foreground" />
                   </div>
                   <h3
-                    className="text-lg font-semibold"
+                    className="text-base font-semibold"
                     style={{ fontFamily: "var(--font-inter)" }}
                   >
                     {category.title}
                   </h3>
                 </div>
 
-                {/* ----- Skills List ----- */}
+                {/* ----- Skills List (with neutral bullets) ----- */}
                 <ul className="space-y-2">
                   {category.skills.map((skill) => (
                     <li
                       key={skill}
                       className="flex items-center gap-2 text-sm text-muted-foreground"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="w-1 h-1 rounded-full bg-muted-foreground shrink-0" />
                       <span>{skill}</span>
                     </li>
                   ))}

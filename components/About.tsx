@@ -52,23 +52,23 @@ export function About() {
                 that values quality engineering and continuous learning.
               </p>
 
-              {/* ----- Divider ----- */}
+              {/* ----- Divider + Stats ----- */}
               <div className="pt-4 border-t border-border">
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4">
                   <div>
-                    <p className="text-2xl font-bold text-primary">2026</p>
+                    <p className="text-2xl font-bold text-foreground">2026</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Graduated
                     </p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">10+</p>
+                    <p className="text-2xl font-bold text-foreground">10+</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Projects Built
                     </p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">5+</p>
+                    <p className="text-2xl font-bold text-foreground">5+</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Technologies
                     </p>
@@ -80,8 +80,8 @@ export function About() {
             {/* ----- Right: Info Cards (2/5 width) ----- */}
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-start gap-4 p-5 rounded-lg border border-border bg-background">
-                <div className="flex items-center justify-center w-10 h-10 rounded-md bg-primary/10 shrink-0">
-                  <MapPin className="h-5 w-5 text-primary" />
+                <div className="flex items-center justify-center w-10 h-10 rounded-md bg-secondary shrink-0">
+                  <MapPin className="h-5 w-5 text-foreground" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
@@ -92,16 +92,14 @@ export function About() {
               </div>
 
               <div className="flex items-start gap-4 p-5 rounded-lg border border-border bg-background">
-                <div className="flex items-center justify-center w-10 h-10 rounded-md bg-primary/10 shrink-0">
-                  <GraduationCap className="h-5 w-5 text-primary" />
+                <div className="flex items-center justify-center w-10 h-10 rounded-md bg-secondary shrink-0">
+                  <GraduationCap className="h-5 w-5 text-foreground" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
                     Education
                   </p>
-                  <p className="text-sm font-medium">
-                    BS Computer Science
-                  </p>
+                  <p className="text-sm font-medium">BS Computer Science</p>
                   <p className="text-xs text-muted-foreground mt-0.5">
                     2022 - 2026
                   </p>
@@ -109,8 +107,8 @@ export function About() {
               </div>
 
               <div className="flex items-start gap-4 p-5 rounded-lg border border-border bg-background">
-                <div className="flex items-center justify-center w-10 h-10 rounded-md bg-primary/10 shrink-0">
-                  <Briefcase className="h-5 w-5 text-primary" />
+                <div className="flex items-center justify-center w-10 h-10 rounded-md bg-secondary shrink-0">
+                  <Briefcase className="h-5 w-5 text-foreground" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
@@ -123,11 +121,11 @@ export function About() {
                 </div>
               </div>
 
-              {/* ----- Availability Note ----- */}
-              <div className="p-5 rounded-lg border border-primary/20 bg-primary/5">
+              {/* ----- Availability Note (neutral) ----- */}
+              <div className="p-5 rounded-lg border border-border bg-secondary/50">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <p className="text-sm font-medium text-primary">
+                  <div className="w-2 h-2 rounded-full bg-foreground/60" />
+                  <p className="text-sm font-medium text-foreground">
                     Available for work
                   </p>
                 </div>

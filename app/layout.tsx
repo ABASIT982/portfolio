@@ -18,9 +18,48 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Abdul Basit - Full-Stack Web Engineer",
+  title: {
+    default: "Abdul Basit — Full Stack Web Engineer",
+    template: "%s | Abdul Basit",
+  },
   description:
-    "Portfolio of Abdul Basit - Full-Stack Web Engineer specializing in Next.js, AWS, and AI integration.",
+    "Full Stack Web Engineer specializing in Next.js, TypeScript, AWS, and AI integration. Building modern, scalable web applications from Lahore, Pakistan.",
+  keywords: [
+    "Abdul Basit",
+    "Full Stack Developer",
+    "Web Engineer",
+    "Next.js Developer",
+    "React Developer",
+    "AWS Developer",
+    "TypeScript",
+    "AI Integration",
+    "Pakistan Developer",
+    "Lahore Developer",
+  ],
+  authors: [{ name: "Abdul Basit" }],
+  creator: "Abdul Basit",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://abdulbasit.vercel.app",
+    title: "Abdul Basit — Full Stack Web Engineer",
+    description:
+      "Building modern, scalable web applications with Next.js, AWS, and AI.",
+    siteName: "Abdul Basit Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdul Basit — Full Stack Web Engineer",
+    description:
+      "Building modern, scalable web applications with Next.js, AWS, and AI.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
