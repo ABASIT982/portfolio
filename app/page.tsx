@@ -117,14 +117,14 @@ export default function Home() {
 
                 {/* ----- Photo (no visible border) ----- */}
                 <div className="relative w-full h-full rounded-full overflow-hidden">
-                <Image
-  src="/abdul-basit.png"
-  alt="Abdul Basit"
-  fill
-  sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
-  className="object-cover"
-  priority
-/>
+                  <Image
+                    src="/abdul-basit.png"
+                    alt="Abdul Basit"
+                    fill
+                    sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+                    className="object-cover"
+                    priority
+                  />
 
                   {/* ----- Very subtle edge blend ----- */}
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_80px_30px_rgba(250,250,250,0.35)]" />

@@ -4,15 +4,6 @@ import Link from "next/link";
 // ----- Project data -----
 const projects = [
   {
-    title: "Comsats Scholarship Portal",
-    description:
-      "AI-powered scholarship management system that automates applications and verification for graduate and undergraduate students. Built as Final Year Project with intelligent automation.",
-    tech: ["TypeScript", "AI/ML", "Automation", "Next.js", "Supabase"],
-    github: "https://github.com/ABASIT982/ComsatsScholarshipPortal",
-    live: null,
-    featured: true,
-  },
-  {
     title: "DocChat AI",
     description:
       "Serverless AI-powered PDF Q&A platform. Upload PDFs and ask questions with source citations. Uses AWS Bedrock, Cognito, S3, and Next.js.",
@@ -26,17 +17,17 @@ const projects = [
       "Cognito",
     ],
     github: "https://github.com/ABASIT982/docchat-ai",
-    live: null,
+    live: "https://docchat-ai-mu.vercel.app/",
     featured: true,
   },
   {
-    title: "NADRA Pakistan System",
+    title: "Comsats Scholarship Portal",
     description:
-      "Academic project simulating NADRA's identity management system with secure data handling and verification workflows.",
-    tech: ["JavaScript", "Web Development"],
-    github: "https://github.com/ABASIT982/Nadra-Pakistan",
-    live: null,
-    featured: false,
+      "AI-powered scholarship management system that automates applications and verification for graduate and undergraduate students. Built as Final Year Project with intelligent automation.",
+    tech: ["TypeScript", "AI/ML", "Automation", "Next.js", "Supabase"],
+    github: "https://github.com/ABASIT982/ComsatsScholarshipPortal",
+    live: "https://comsats-scholarship-system.vercel.app/",
+    featured: true,
   },
   {
     title: "BloomStar School & College System",
@@ -53,6 +44,15 @@ const projects = [
       "Modern portfolio website built with Next.js and TypeScript showcasing clean UI and responsive design.",
     tech: ["TypeScript", "Next.js"],
     github: "https://github.com/ABASIT982/atif-portfolio",
+    live: "https://atif-portfolio-architect.vercel.app/",
+    featured: false,
+  },
+  {
+    title: "NADRA Pakistan System",
+    description:
+      "Academic project simulating NADRA's identity management system with secure data handling and verification workflows.",
+    tech: ["JavaScript", "Web Development"],
+    github: "https://github.com/ABASIT982/Nadra-Pakistan",
     live: null,
     featured: false,
   },
@@ -123,11 +123,12 @@ export function Projects() {
 
               {/* ----- Links ----- */}
               <div className="flex items-center gap-4 pt-3 border-t border-border">
+                {/* GitHub Button (green/primary) */}
                 <Link
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="flex items-center gap-1.5 text-sm text-primary hover:text-primary/80 transition-colors"
                 >
                   <svg
                     className="h-4 w-4"
@@ -139,12 +140,13 @@ export function Projects() {
                   Code
                 </Link>
 
+                {/* Live Demo Button (also green/primary) */}
                 {project.live && (
                   <Link
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-primary hover:text-primary/80 transition-colors"
                   >
                     <ExternalLink className="h-4 w-4" />
                     Live Demo
